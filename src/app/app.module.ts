@@ -17,14 +17,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ControlsComponent } from './controls/controls.component';
-
+import {FooterPageComponent} from './footer-page/footer-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     DashboardComponent,
     ContactsComponent,
-    ControlsComponent
+    ControlsComponent,
+    FooterPageComponent
   ],
   imports: [
     BrowserModule,

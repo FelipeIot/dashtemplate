@@ -1,2 +1,17 @@
-<app-nav></app-nav>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span class="menu-spacer"></span>
+      <div>
+        <a  *ngFor="let item of menuItems" mat-button [routerLink]="'/'+item"> {{item | titlecase}} </a>
+        <!-- <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+        <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+        <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+        <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
+        <a mat-button [routerLink]="'/activities'"> Activities </a>
+        <a mat-button [routerLink]="'/create-activity'"> Create Activity </a> -->
+  
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
 <router-outlet></router-outlet>
+<app-footer-page></app-footer-page>
