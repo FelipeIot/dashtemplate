@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'admintemplate';
 
-  menuItems = ['dashboard', 'contacts', 'controls'];
+  menuItems = ['home','dashboard', 'contactos', 'controles','soporte'];
 }

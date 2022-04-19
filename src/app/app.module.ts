@@ -18,6 +18,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ControlsComponent } from './controls/controls.component';
 import {FooterPageComponent} from './footer-page/footer-page.component';
+import { HomeComponent } from './home/home.component';
+import { SoporteComponent } from './soporte/soporte.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,9 @@ import {FooterPageComponent} from './footer-page/footer-page.component';
     DashboardComponent,
     ContactsComponent,
     ControlsComponent,
-    FooterPageComponent
+    FooterPageComponent,
+    HomeComponent,
+    SoporteComponent
   ],
   imports: [
     BrowserModule,

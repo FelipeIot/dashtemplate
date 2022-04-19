@@ -3,9 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ControlsComponent } from './controls/controls.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { SoporteComponent } from './soporte/soporte.component';
 
 
-const routes: Routes = [ {path: 'dashboard', component: DashboardComponent },{path: 'contacts', component: ContactsComponent },{path: 'controls', component: ControlsComponent }];
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'contactos', component: ContactsComponent }, { path: 'controles', component: ControlsComponent },
+  { path: 'soporte', component: SoporteComponent }
+
+];
 
 
 @NgModule({
